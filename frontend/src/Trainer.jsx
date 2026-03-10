@@ -5,7 +5,8 @@ function Trainer(){
 
 const [trainers,setTrainers]=useState([]);
 
-const NODE_EC2_IP = '13.233.100.50';
+let NODE_EC2_IP = '13.233.100.50';
+NODE_EC2_IP = 'localhost';
 
 useEffect(()=>{
 

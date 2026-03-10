@@ -1,0 +1,8 @@
+### Add Trainer
+POST http://localhost:5000/api/trainer
+Content-Type: application/json
+
+{
+"name": "John",
+"skills": "React, Node"
+}

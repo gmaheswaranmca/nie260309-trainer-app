@@ -17,7 +17,7 @@ sudo systemctl enable mongodb
 
 echo "Setting up backend"
 cd backend
-npm install express mongoose multer cors dotenv
+#npm install express mongoose multer cors dotenv
 npm install
 mkdir uploads
 chmod 777 uploads
@@ -25,7 +25,7 @@ node server.js &
 
 echo "Setting up frontend"
 cd ../frontend
-npm install axios
+#npm install axios
 npm install
 npm run dev
 

@@ -1,9 +1,9 @@
 const express = require("express");
 const router = express.Router();
 const Trainer = require("../models/Trainer");
-const multer = require("multer");
+//const multer = require("multer");
 
-const storage = multer.diskStorage({
+/* const storage = multer.diskStorage({
 
  destination: function(req,file,cb){
    cb(null,"uploads/")
@@ -15,15 +15,15 @@ const storage = multer.diskStorage({
 
 });
 
-const upload = multer({storage:storage});
+const upload = multer({storage:storage});*/
 
-router.post("/trainer", upload.single("photo"), async (req,res)=>{
-
+router.post("/trainer", /* upload.single("photo"),*/ async (req,res)=>{
+//console.log("Uploaded size:", req.file.size);
 const trainer = new Trainer({
 
    name:req.body.name,
-   skills:req.body.skills,
-   photo:req.file.filename
+   skills:req.body.skills//,
+   //photo:req.file.filename
 
  });
 
